@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CRUD Example</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>User CRUD Operations</h2>
+
+    <!-- CREATE / UPDATE FORM -->
+    <input type="hidden" id="id" />
+
+    <input type="text" id="name" placeholder="Name" />
+    <input type="email" id="email" placeholder="Email" />
+    <input type="number" id="age" placeholder="Age" />
+
+    <button onclick="saveUser()">Save</button>
+    <button onclick="updateUser()">Update</button>
+
+    <!-- READ -->
+    <button onclick="getUsers()">Load Users</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Age</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="userTable"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
